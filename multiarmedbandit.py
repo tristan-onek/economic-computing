@@ -26,7 +26,7 @@ class MultiArmedBandit:
 
 # Simulation parameters
 n_arms = 5
-n_iterations = 1000
+n_iterations = 10000
 epsilon = 0.1
 
 # Initialize the multi-armed bandit
@@ -61,9 +61,9 @@ print("Number of times each arm was pulled:", bandit.action_counts)
 # Plot the cumulative rewards
 plt.figure(figsize=(10, 6))
 plt.plot(cumulative_rewards, label="Cumulative Reward")
-plt.xlabel("Iterations")
-plt.ylabel("Cumulative Reward")
-plt.title("Multi-Armed Bandit: Cumulative Reward Over Time")
+plt.xlabel("ITERATIONS")
+plt.ylabel("CUMULATIVE REWARD")
+plt.title("Multi-Armed Bandit Cumulative Reward Chart")
 plt.legend()
 plt.grid()
 plt.show()
